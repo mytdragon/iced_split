@@ -435,7 +435,7 @@ where
             _ => 0.0,
         };
 
-        let max_limits = limits.max();
+        let max_limits = limits.bounds();
         let (cross_direction, layout_direction) =
             self.direction.select(max_limits.width, max_limits.height);
 
